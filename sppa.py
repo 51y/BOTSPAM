@@ -55,7 +55,7 @@ def login():
             url_report = 'https://www.instagram.com/users/{}/report/'.format(idd)
             datas = {'source_name':'','reason_id':1,'frx_context':''} #spam
             report = r.post(url_report,data=datas)
-            print(g+'done spam {}'.format(done))
+            print('done spam {}'.format(done))
             sleep(sle)
             done += 1
     else:
